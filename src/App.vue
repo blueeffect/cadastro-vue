@@ -37,7 +37,7 @@
     methods: {
       enviar() {
         // Metodo usado para fazer POST, sem usar o recurso $resource
-        // this.$http.post('', this.user)
+        // this.$http.post('data.json', this.user)
         //   .then(response => {
         //     console.log(response);
         //   }, error => {
@@ -46,7 +46,7 @@
         this.resource.save({}, this.user);
       },
       pegaDados () {
-        this.$http.get('')
+        this.$http.get('data.json')
               .then(response => {
                 return response.json();
               })

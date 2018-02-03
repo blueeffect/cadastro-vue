@@ -4,7 +4,7 @@ import App from './App.vue'
 
 Vue.use(VueResource);
 
-Vue.http.options.root = 'https://vuejs-http-b8479.firebaseio.com/data.json'
+Vue.http.options.root = 'https://vuejs-http-b8479.firebaseio.com'
 // Troca o metodo post por metodo PUT
 Vue.http.interceptors.push((request, next) => {
   console.log(request);
